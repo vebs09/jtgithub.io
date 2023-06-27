@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #section1 {
+            display: flex;
+            height: 500px;
+            
+        }
+
+        img {
+            width: 220px;
+            padding: 45px;
+
+        }
+
+        .div2 {
+            padding-right: 120px;
+            padding-top: 60px;
+        }
+
+        .item1 {
+            list-style: none;
+            border: 1px solid rgb(228, 210, 210);
+            margin: 20px;
+        }
+
+        li {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 5px;
+        }
+        #div3{
+            padding-top: 50px;
+        }
+        button{
+            background-color: orange;
+            color: white;
+            border-radius: 20px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+
+    <body>
+        <section id="section1">
+            <div>
+                <img src="img6book.jpeg" alt="" srcset="">
+
+            </div>
+            <div id="div3">
+                <h1>All you Need is josh</h1>
+                <p>By Supriya Paul </p>
+                <h2>347.00 RS</h2>
+                <button onclick="goToAmezone()" >Buy Now</button>
+            </div>
+            <hr>
+            <div class="div2">
+                <ul class="nav1">
+
+                    <li class="item1"><a href="https://www.joshtalks.com/josh-talks/">JOSH TALKS</a>
+                        <p>Inspiring india in 10 language</p>
+                    </li>
+                    <li class="item1"><a href="https://www.joshtalks.com/josh-skills/">JOSH SKILLS</a>
+                        <p>Bharat's go-to app to learn spoken english</p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <script>
+            function goToAmezone() {
+              window.location.href = "https://www.amazon.in/All-You-Need-Josh-Conviction/dp/938971429X";
+            }
+          </script>
+    </body>
+
+</html>

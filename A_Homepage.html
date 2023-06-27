@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .circular-image {
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: circularMotion 10s linear infinite;
+    }
+
+    @keyframes circularMotion {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+</style>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Talks Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        function myFunction1() {
+            window.location.href = "JoshEcosystem.html";
+        }
+        function partner() {
+            window.location.href = "ForPartners.html";
+        }
+        function myFunction() {
+            window.location.href = "AboutJosh.html";
+        }
+
+        function myFunction2() {
+            window.location.href = "https://www.joshtalks.com/josh-talks/";
+        }
+        function myFunction3() {
+            window.location.href = "https://www.joshtalks.com/josh-skills/";
+        }
+        function myFunction4() {
+            window.location.href = "https://www.joshtalks.com/partners/";
+        }
+    </script>
+    <nav id="navbar">
+
+        <img id="logoimg" src="Josh_Talk_Logo.png" alt="JoshTalks" style="width:120px; height:100px;">
+        <ul id="nav">
+
+            <li class="item"><button style="border: none; background: none;" onclick="myFunction1()"
+                    target="_blank">JOSH ECOSYSTEM</button></li>
+            <li class="item"><button style="border: none; background: none;" onclick="partner()" target="_blank">FOR
+                    PARTNERS</button></li>
+            <li class="item"> <button style="border: none; background: none;" onclick="myFunction()"
+                    target="_blank">ABOUT JOSH</button></li>
+        </ul>
+
+    </nav>
+    <section>
+        <div>
+            <img src="Bg1.png" alt="" srcset="" style="width: 101%;">
+
+
+            <h1 class="h1" style=" font-size: 4.0rem;">All you</h1>
+            <h1 class="h2" style=" font-size: 4.0rem;">need is</h1>
+
+            <h1 class="h3" id="word" style=" font-size: 5.5rem; POSITION: absolute; 
+            LEFT: 566PX; color:rgb(238, 85, 30);">JOSH</h1>
+
+            <script>
+                var translations = {
+                    "en": "JOSH",        // English
+                    "mr": "जोश",         // Marathi
+                    "ta": "జోష్",   // Tamil
+                    "gu": "જોશ"         // Gujarati
+                };
+
+                var languages = ["en", "mr", "ta", "gu"];  // Add or modify languages as needed
+
+                var currentIndex = 0;
+                var wordElement = document.getElementById("word");
+
+                function changeWordLanguage() {
+                    wordElement.textContent = translations[languages[currentIndex]];
+                    currentIndex = (currentIndex + 1) % languages.length;
+                }
+
+                setInterval(changeWordLanguage, 2000); // Change word every 2 seconds
+            </script>
+
+            <section class="hero-banner padding">
+                <div class="banner-img image-1">
+
+                    <img id="img1" class=" ls-is-cached lazyloaded" src="img1.jpeg">
+                </div>
+
+
+                <div class="banner-img image-1">
+                    <img id="img2" alt="Image 1" class=" ls-is-cached lazyloaded" src="img2.jpeg">
+                </div>
+
+
+                <div class="banner-img image-1">
+                    <img id="img3" alt="Image 1" class=" ls-is-cached lazyloaded" src="img3.jpeg">
+                </div>
+
+
+                <div class="banner-img image-1">
+                    <img id="img4" alt="Image 1" class=" ls-is-cached lazyloaded" src="img4.jpeg">
+                </div>
+
+
+                <P style="position: absolute;
+                 left: 480px;
+                 top: 512px; color:#363636; font-size: 2.0rem;">
+                    Inspiring, Informing, Upskilling India <br>
+                    <b>in 10 Regional Languages</b>
+                </P>
+            </section>
+        </div>
+    </section>
+
+
+    <section>
+        <p class="para">Josh is on a mission to <b style="color:blue;">unlock human potential</b> <br> by creating tools
+            that <b style="color:orangered;">effectively nurture</b> each <br> individual’s potential.</p>
+    </section>
+
+
+    <section id="box">
+        <div id="box1">
+            <div class="box1">
+                <h1>Josh Talks <button onclick="myFunction2()"
+                    target="_blank" class="btn btn-info">-></button></h1>
+                <p>Watch inspiring stories, listen to your role models, and learn about different careers in your
+                    preferred language.</p>
+            </div>
+            <hr>
+            <div class="box2">
+                <h1>Josh Skills <button onclick="myFunction3()"
+                    target="_blank" class="btn btn-info" target="_blank">-></button></h1>
+                <p>Learn to speak in English confidently, build new skills, and unlock better career opportunities.</p>
+            </div>
+        </div>
+        <hr>
+        <div id="box2">
+            <div class="box3">
+                <h1>Brand Solutions <button onclick="myFunction4()"
+                    target="_blank" class="btn btn-info">-></button></h1>
+                <p>Partner with us to create exclusive content, strengthen your brand presence, and reach the next
+                    billion users.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="section5">
+        <div>
+            <h1 style="padding-top: 10px; color: rgb(230, 103, 29); font-size: xx-large;">Get Inspired to <br> Take
+                Action
+            </h1>
+            <div id="div5">
+                <div>
+                    <h1>Story-Driven Approach</h1>
+                    <p>Watch stories of ordinary Indians with extraordinary accomplishments who make us believe that if
+                        they
+                        can, so can I!</p>
+                </div>
+
+                <div>
+                    <h1>Career-Related Information</h1>
+                    <p>Learn from IAS officers, entrepreneurs, content creators, sportspersons, and more as they share
+                        their
+                        secret to success.</p>
+                </div>
+
+                <div>
+                    <h1>Relatable Role Models</h1>
+                    <p>Tune in to life lessons from role models who not only share similar backgrounds but also speak in
+                        our
+                        local language.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section>
+        <h1 class="h4">Our Impact</h1>
+        <div id="div4">
+            <div class="div5" style="background-color: blue;">
+                <p style="color: white;">LIFETIME VIEWS ACROSS ALL CHANNELS</p>
+                <h2 style="color: orangered;">2.5 Billion+</h2>
+            </div>
+            <div class="div5" style="background-color: orange;">
+                <p style="color: white;">TOTAL SUBSCRIBERS ON YOUTUBE</p>
+                <h2 style="color: orangered;">19 Million+</h2>
+            </div>
+            <div class="div5" style="border: 5px solid blue;">
+                <p style="color: blue;">TOTAL DOWNLOADS OF OUR APP</p>
+                <h2 style="color: blue;">5 Million+</h2>
+            </div>
+            <div class="div5" style="background-color: rgb(241, 134, 10);">
+                <p style="color: white;">AVERAGE TIME SPENT ON THE APP</p>
+                <h2 style="color: rgb(247, 77, 11);">55 Minutes</h2>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <h2 style="color: orangered;">==================================THOSE WHO TRUST OUR
+            VISION==================================</h2>
+        <img style="padding-left: 170px;" src="VISION LOGO.jpeg" alt="" srcset="">
+        <div id="div4">
+            <div class="div5" style="background-color: rgb(235, 235, 248);">
+                <img class="icon" src="VIJAY.jpeg" alt="" srcset="">
+                <h2>VIJAY SHANKAR SHARMA</h2>
+                <P>Founder and CEO,PayTM</P>
+            </div>
+            <div class="div5" style="background-color: rgb(235, 235, 248);">
+                <img class="icon" src="VINEETA.jpeg" alt="" srcset="">
+                <h2>VINEETA SINGH</h2>
+                <p>CEO,sugar cosmetic</p>
+            </div>
+            <div class="div5" style="background-color:rgb(235, 235, 248)">
+                <img class="icon" src="RITESH.jpeg" alt="" srcset="">
+                <h2>RITESH AGRAWAL</h2>
+                <P>Founder and group CEO,OYO</P>
+            </div>
+            <div class="div5" style="background-color: rgb(235, 235, 248);">
+                <img class="icon" src="SUUMIT.jpeg" alt="" srcset="">
+                <h2>SUUMIT SHAH</h2>
+                <p>Founder and CEO,DUKAN</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: orange;">
+        <h1>in the media</h1>
+        <ul>
+            <li class=" "><a
+                    href="https://inc42.com/startups/josh-talks-bags-funding-from-ankur-capital-vijay-shekhar-sharma-others-to-meet-bharats-skill-aspirations/">
+                    <img class="icon1" src="media1.jpeg" alt="" srcset="">
+                    <h2>Josh Talks Bags Funding To Meet Bharat’s Skill Aspirations</h2>
+                    <p>“When it comes to skilling, the aspiration of Indians is unlimited. People are super driven even
+                        in Tier 2 and Tier 3 India to learn new skills because it directly....</p>
+                </a></li>
+
+            <li class=" "><a
+                    href="https://www.forbesindia.com/article/startups/hows-the-josh-inspirational-sir/56129/1">
+                    <img class="icon1" src="media2.jpg" alt="" srcset="">
+                    <h2>How's the Josh? Inspirational, sir</h2>
+                    <p>Frustration, reckons Shobhit Banga, is a double-edged sword. It can either be exasperating or
+                        motivating. For the first....</p>
+                </a></li>
+
+            <li class=" "><a
+                    href="https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/new-energy-1-5-million-pre-series-a-round-to-help-josh-talks-go-international/articleshow/74334163.cms">
+                    <img class="icon1" src="media3.jpg" alt="" srcset="">
+                    <h2>New energy: $1.5 million pre-Series A round to help Josh Talks go international</h2>
+                    <p>Gurugram-based social tech startup Josh Talks is expanding its vernacular reach in Southern and
+                        Northeastern India by launching ...</p>
+                </a></li>
+        </ul>
+    </section>
+
+
+    <section id="section2">
+
+        <div class="container">
+            <div class="box">
+                <img src="Josh_Talk_Logo.png" alt="" srcset="">
+            </div>
+
+            <div class="boxmiddle">
+                <div>
+                    <h1>Josh Ecosystem</h1>
+                    <ul class="ull">
+                        <li><a href="https://www.joshtalks.com/josh-talks/">Josh Talks</a></li>
+                        <li><a href="https://www.joshtalks.com/josh-skills/">Josh Skills</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h1>Josh For You</h1>
+                    <ul class="ull">
+                        <li><a href="https://www.joshtalks.com/partners/">For Partners</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h1>About Josh</h1>
+                    <ul class="ull">
+                        <li><a href="https://www.joshtalks.com/about-josh/">About</a></li>
+                        <li><a href="https://www.joshtalks.com/careers/">Careers</a></li>
+                        <li><a href="https://www.joshtalks.com/contact-us/">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Josh Ecosystem</h1>
+                    <ul class="ull">
+                        <li><a href="https://www.joshtalks.com/posh/">PoSH</a></li>
+                        <li><a href="https://www.joshtalks.com/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.joshtalks.com/terms-conditions/">Terms & Conditions</a></li>
+                        <li><a href="https://www.joshtalks.com/community-guidelines/">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <p> <b>Download the</b></p>
+                <p> <b>Josh Skills App Now!</b></p>
+                <a href="https://play.google.com/store/apps/details?id=com.joshtalks.joshskills&hl=en_IN&gl=US&pli=1">
+                    <img src="playstoreLogo.jpg" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <hr style="color: rgb(29, 23, 23);">
+    <footer style="height: 40px;">
+        <ul class="social-media">
+            <span style="position: absolute;" class="find-josh">FIND JOSH ON:</span>
+            <li><a href="https://www.instagram.com"><img style="
+                width: 34px;
+                position: absolute;
+                left: 200px;
+                top: 585%;
+                margin-top: 4px;
+            " src="instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.twitter.com"><img style=" width: 33px;
+                position: absolute;
+                left: 250px;
+                top: 585%;
+                margin-top: 4px;" src="twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.facebook.com"><img style=" width: 54px;position: absolute;left: 290px;top: 585%;"
+                        id="facebook" src="facebook.png" alt="Facebook"></a></li>
+        </ul>
+        <p class="" style="position: absolute;
+        left: 500px;
+        top: 583%;">Made with ❤️ by SimplePlan</p>
+        <p style="position: absolute;
+    left: 1000px;
+    top: 583%;">© Josh Talks Part of Josh Group. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>

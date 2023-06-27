@@ -1,0 +1,139 @@
+#navbar {
+    right: -13px;
+    top: 5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+}
+
+ul {
+    display: flex;
+    padding: 10px;
+    flex-direction: right;
+}
+
+.item {
+    list-style: none;
+    padding-right: 20px;
+
+}
+
+#nav {
+    float: right;
+    
+}
+
+
+button{
+    cursor: pointer;
+}
+
+#logoimg {
+    position: absolute;
+    right: 1224px;
+    top: -27px;
+    width: 120px;
+    height: 100px;
+}
+
+#section1{
+    display: flex;
+    padding-top: 70px;
+}
+
+#div4 {
+    display: flex;
+   justify-content: center;
+
+}
+
+.div5 {
+    padding: 50px;
+    margin: 15px;
+    border-radius: 15px;
+}
+.h4 {
+    text-align: center;
+    
+}
+.icon1 {
+    width: 200px;
+    height: 200px;
+
+}
+
+.container {
+    display: flex;
+    
+}
+
+/* CSS for the boxes */
+.box {
+    flex-grow: 1;
+    height: 300px;
+    width: 150px;
+    box-sizing: border-box;
+    
+}
+
+.box img {
+
+    height: 200px;
+    width: 250px;
+}
+
+#box img {
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+
+.paraf{
+    position: absolute;
+    left: 500px;
+    top: 1071%;
+}
+
+.boxmiddle {
+    display: flex;
+    justify-content: center;
+    padding-left: 120px;
+    
+    
+}
+
+.ull{
+    display: block;
+    margin: 20px;
+    
+}
+
+.ull li{
+    margin: 20px;
+    list-style: none;
+}
+.ull li a{
+    text-decoration: none;
+}
+
+/* CSS for the middle box */
+.box.middle {
+    flex-grow: 2;
+}
+#insta{
+    width: 50px;
+   
+
+}
+#facebook{
+    width: 50px;
+    position: absolute;
+    left: 145px;
+}
+#twt{
+    width: 33px;
+    position: absolute;
+    left: 120px;
+}
